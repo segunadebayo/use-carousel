@@ -1,4 +1,4 @@
-import usePrevious from "@rooks/use-previous";
+import usePrevious from "./use-previous";
 import { useId } from "@reach/auto-id";
 import { useRect } from "@reach/rect";
 import useWindowSize from "@rooks/use-window-size";
@@ -24,7 +24,7 @@ import {
   useEventListener,
   useControllable,
 } from "./utils";
-import useInterval from "@rooks/use-interval";
+import useInterval from "./use-interval";
 
 type Dict = Record<string, any>;
 
@@ -347,7 +347,7 @@ export function useCarousel(props: UseCarouselProps = {}) {
         break;
 
       default:
-        const firstSlideIndex = index * prevPerView + 1;
+        const firstSlideIndex = index * (prevPerView + 1);
         setIndex(Math.ceil(firstSlideIndex / perView) - 1);
     }
     setPages(newPages);
