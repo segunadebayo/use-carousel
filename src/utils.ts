@@ -1,4 +1,4 @@
-import React, { Ref } from "react";
+import * as React from "react";
 
 type Args<T extends Function> = T extends (...args: infer R) => any ? R : never;
 
@@ -13,7 +13,7 @@ export function callAllHandlers<T extends (event: any) => void>(
   };
 }
 
-export function mergeRefs<T>(...refs: Array<Ref<T> | undefined>) {
+export function mergeRefs<T>(...refs: Array<React.Ref<T> | undefined>) {
   return (node: T | null) => {
     refs.forEach((ref) => {
       if (ref) {
@@ -23,7 +23,7 @@ export function mergeRefs<T>(...refs: Array<Ref<T> | undefined>) {
   };
 }
 
-function setRef<T>(ref: Ref<T>, node: T) {
+function setRef<T>(ref: React.Ref<T>, node: T) {
   if (typeof ref === "function") {
     ref(node);
   } else if (Object(ref) === ref) {
@@ -54,8 +54,6 @@ export function useMountedEffect(fn: () => void) {
     if (mounted) fn();
   }, [mounted, fn]);
 }
-
-import * as React from "react";
 
 export interface UseControllableProps<T> {
   /**
@@ -88,4 +86,14 @@ export function useControllable<T>(props: UseControllableProps<T>) {
   );
 
   return [finalValue, update] as [T, (next: T) => void];
+}
+
+export function useLatest<T>(val: T) {
+  const saved = React.useRef<T>();
+
+  React.useEffect(() => {
+    saved.current = val;
+  }, [val]);
+
+  return saved;
 }

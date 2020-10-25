@@ -10,7 +10,7 @@ import {
   useEffect,
   useMemo,
   useRef,
-  useState
+  useState,
 } from "react";
 import MultiRef from "react-multi-ref";
 import { EventData, useSwipeable } from "react-swipeable";
@@ -20,11 +20,11 @@ import {
   useMountedEffect,
   callAllHandlers,
   mergeRefs,
-  useControllable
+  useLatest,
+  useControllable,
 } from "./utils";
 import useEventListener from "@react-hook/event";
 import useInterval from "@rooks/use-interval";
-import useLatest from "use-latest";
 
 type Dict = Record<string, any>;
 
@@ -61,7 +61,7 @@ function useBreakpoints(props: UseBreakpointsProps) {
         spacing: breakpoints[bp].spacing ?? initialProps.spacing,
         autoPlay: breakpoints[bp].autoPlay ?? initialProps.autoPlay,
         offsetAfter: breakpoints[bp].offsetAfter ?? initialProps.offsetAfter,
-        offsetBefore: breakpoints[bp].offsetBefore ?? initialProps.offsetBefore
+        offsetBefore: breakpoints[bp].offsetBefore ?? initialProps.offsetBefore,
       };
       break;
     }
@@ -222,7 +222,7 @@ enum AutoplayStatus {
   /**
    * The carousel was paused, and timeout was cleared
    */
-  PAUSED = "paused"
+  PAUSED = "paused",
 }
 
 /**
@@ -250,7 +250,7 @@ export function useCarousel(props: UseCarouselProps = {}) {
     thumbnail,
     offsetAfter = 0,
     offsetBefore = 0,
-    onSwipe
+    onSwipe,
   } = props;
 
   /**
@@ -293,7 +293,7 @@ export function useCarousel(props: UseCarouselProps = {}) {
   const [index, setIndex] = useControllable({
     value: indexProp,
     defaultValue: defaultIndex || 0,
-    onChange
+    onChange,
   });
 
   /**
@@ -305,14 +305,14 @@ export function useCarousel(props: UseCarouselProps = {}) {
     spacing,
     autoPlay: autoPlayProp,
     offsetBefore: offsetBeforeProp,
-    offsetAfter: offsetAfterProp
+    offsetAfter: offsetAfterProp,
   } = useBreakpoints({
     perView: initialPerView,
     spacing: parseInt(initialSpacing.toString()),
     autoPlay,
     breakpoints,
     offsetAfter,
-    offsetBefore
+    offsetBefore,
   });
 
   /**
@@ -556,7 +556,7 @@ export function useCarousel(props: UseCarouselProps = {}) {
       direction: "left",
       fromIndex: index,
       toIndex,
-      pageSize: pages
+      pageSize: pages,
     });
   };
 
@@ -576,14 +576,14 @@ export function useCarousel(props: UseCarouselProps = {}) {
       direction: "right",
       fromIndex: index,
       toIndex,
-      pageSize: pages
+      pageSize: pages,
     });
   };
 
   const swipeableProps = useSwipeable({
     onSwiping: handleSwiping,
     onSwipedLeft: swipeLeft,
-    onSwipedRight: swipeRight
+    onSwipedRight: swipeRight,
   });
 
   /**
@@ -638,7 +638,7 @@ export function useCarousel(props: UseCarouselProps = {}) {
   const thumbnailOptions = {
     interaction: "click",
     orientation: "horizontal",
-    ...thumbnail
+    ...thumbnail,
   };
 
   return {
@@ -655,13 +655,13 @@ export function useCarousel(props: UseCarouselProps = {}) {
       "aria-labelledby": labelId,
       style: {
         ...props.style,
-        position: "relative"
-      }
+        position: "relative",
+      },
     }),
 
     getLabelProps: (props: Dict = {}) => ({
       ...props,
-      id: labelId
+      id: labelId,
     }),
 
     getSlideGroupWrapperProps: (props: Dict = {}) => {
@@ -671,8 +671,8 @@ export function useCarousel(props: UseCarouselProps = {}) {
           ...props.style,
           overflow: "hidden",
           paddingLeft: offsetBeforeProp,
-          paddingRight: offsetAfterProp
-        }
+          paddingRight: offsetAfterProp,
+        },
       };
     },
 
@@ -685,7 +685,7 @@ export function useCarousel(props: UseCarouselProps = {}) {
         return cloneElement(child, {
           "data-active": isActive ? "" : undefined,
           ref: mergeRefs(child.ref, slidesRef.ref(idx)),
-          "aria-label": `${idx + 1} of ${slidesRef.map.size}`
+          "aria-label": `${idx + 1} of ${slidesRef.map.size}`,
         });
       });
 
@@ -699,7 +699,7 @@ export function useCarousel(props: UseCarouselProps = {}) {
          */
         clones.unshift(
           cloneElement(props.children[props.children.length - 1], {
-            key: props.children.length + 1
+            key: props.children.length + 1,
           })
         );
       }
@@ -730,8 +730,8 @@ export function useCarousel(props: UseCarouselProps = {}) {
           transform: `translate3d(-${
             tempTranslateX || translateX
           }px, 0px, 0px)`,
-          transitionDuration: !tempTranslateX && transitionDurationRef.current
-        }
+          transitionDuration: !tempTranslateX && transitionDurationRef.current,
+        },
       };
     },
 
@@ -747,8 +747,8 @@ export function useCarousel(props: UseCarouselProps = {}) {
          * else use `minWidth` of 100% to inherit width using CSS
          */
         ...(!!rect ? { width: slideWidth } : { minWidth: "100%" }),
-        marginRight: spacing
-      }
+        marginRight: spacing,
+      },
     }),
 
     getNextButtonProps: (props: Dict = {}) => {
@@ -759,7 +759,7 @@ export function useCarousel(props: UseCarouselProps = {}) {
         "aria-controls": slideGroupId,
         "aria-label": "Next Slide",
         onClick: callAllHandlers(props.onClick, onNextClick),
-        hidden
+        hidden,
       };
     },
 
@@ -771,7 +771,7 @@ export function useCarousel(props: UseCarouselProps = {}) {
         "aria-controls": slideGroupId,
         "aria-label": "Previous Slide",
         onClick: callAllHandlers(props.onClick, onPrevClick),
-        hidden
+        hidden,
       };
     },
 
@@ -779,7 +779,7 @@ export function useCarousel(props: UseCarouselProps = {}) {
       "aria-label": isTicking
         ? "Stop automatic slide show"
         : "Start automatic slide show",
-      onClick: callAllHandlers(props.onClick, pauseAutoPlay)
+      onClick: callAllHandlers(props.onClick, pauseAutoPlay),
     }),
 
     getPaginationProps: (props: Dict = {}) => {
@@ -789,7 +789,7 @@ export function useCarousel(props: UseCarouselProps = {}) {
         cloneElement(child, {
           isSelected: idx === index,
           index: idx,
-          onClick: () => setIndex(idx)
+          onClick: () => setIndex(idx),
         })
       );
 
@@ -798,8 +798,8 @@ export function useCarousel(props: UseCarouselProps = {}) {
         children,
         pages,
         style: {
-          textAlign: "center"
-        }
+          textAlign: "center",
+        },
       };
     },
 
@@ -812,7 +812,7 @@ export function useCarousel(props: UseCarouselProps = {}) {
         console.warn(
           [
             `useCarousel: The number of thumnails doesn't match the number slides`,
-            `You have ${pages} slides and ${count} thumbnails`
+            `You have ${pages} slides and ${count} thumbnails`,
           ].join(" ")
         );
       }
@@ -824,7 +824,7 @@ export function useCarousel(props: UseCarouselProps = {}) {
         return cloneElement(child, {
           isSelected: idx === index,
           index: idx,
-          [onTrigger]: () => setIndex(idx)
+          [onTrigger]: () => setIndex(idx),
         });
       });
 
@@ -859,9 +859,9 @@ export function useCarousel(props: UseCarouselProps = {}) {
         ...rest,
         children: _children,
         tabIndex: 0,
-        onKeyDown: callAllHandlers(props.onKeyDown, onKeyDown)
+        onKeyDown: callAllHandlers(props.onKeyDown, onKeyDown),
       };
-    }
+    },
   };
 }
 

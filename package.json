@@ -2,8 +2,13 @@
   "name": "use-carousel",
   "version": "1.0.0",
   "description": "",
+  "private": "false",
+  "license": "MIT",
   "keywords": [],
-  "main": "src/index.tsx",
+  "main": "lib/commonjs",
+  "module": "lib/module",
+  "browser": "lib/module/browser",
+  "types": "lib/types",
   "dependencies": {
     "@reach/auto-id": "0.11.2",
     "@reach/rect": "0.11.2",
@@ -11,13 +16,13 @@
     "@rooks/use-interval": "3.6.0",
     "@rooks/use-previous": "3.6.0",
     "@rooks/use-window-size": "3.6.0",
-    "react": "17.0.0",
-    "react-dom": "17.0.0",
     "react-multi-ref": "1.0.0",
-    "react-scripts": "3.3.0",
     "react-swipeable": "5.5.1",
-    "ssr-window": "2.0.0",
-    "use-latest": "1.1.0"
+    "ssr-window": "2.0.0"
+  },
+  "peerDependencies": {
+    "react": "16.x || 17.x",
+    "react-dom": "16.x || 17.x"
   },
   "devDependencies": {
     "@types/react": "16.9.19",
@@ -25,10 +30,10 @@
     "typescript": "3.7.5"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "build:module": "tsc --module es2015 --outDir lib/module --declaration false",
+    "build:commonjs": "tsc --module commonjs --outDir lib/commonjs --declaration false",
+    "build:types": "tsc --emitDeclarationOnly --declaration true --declarationDir lib/types",
+    "build": "yarn build:module && yarn build:commonjs && yarn build:types"
   },
   "browserslist": [
     ">0.2%",

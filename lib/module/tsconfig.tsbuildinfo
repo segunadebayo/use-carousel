@@ -1,0 +1,357 @@
+{
+  "program": {
+    "fileInfos": {
+      "../../node_modules/typescript/lib/lib.es5.d.ts": {
+        "version": "fc43680ad3a1a4ec8c7b8d908af1ec9ddff87845346de5f02c735c9171fa98ea",
+        "signature": "fc43680ad3a1a4ec8c7b8d908af1ec9ddff87845346de5f02c735c9171fa98ea"
+      },
+      "../../node_modules/typescript/lib/lib.es2015.d.ts": {
+        "version": "7994d44005046d1413ea31d046577cdda33b8b2470f30281fd9c8b3c99fe2d96",
+        "signature": "7994d44005046d1413ea31d046577cdda33b8b2470f30281fd9c8b3c99fe2d96"
+      },
+      "../../node_modules/typescript/lib/lib.es2016.d.ts": {
+        "version": "5f217838d25704474d9ef93774f04164889169ca31475fe423a9de6758f058d1",
+        "signature": "5f217838d25704474d9ef93774f04164889169ca31475fe423a9de6758f058d1"
+      },
+      "../../node_modules/typescript/lib/lib.es2017.d.ts": {
+        "version": "459097c7bdd88fc5731367e56591e4f465f2c9de81a35427a7bd473165c34743",
+        "signature": "459097c7bdd88fc5731367e56591e4f465f2c9de81a35427a7bd473165c34743"
+      },
+      "../../node_modules/typescript/lib/lib.dom.d.ts": {
+        "version": "d93de5e8a7275cb9d47481410e13b3b1debb997e216490954b5d106e37e086de",
+        "signature": "d93de5e8a7275cb9d47481410e13b3b1debb997e216490954b5d106e37e086de"
+      },
+      "../../node_modules/typescript/lib/lib.es2015.core.d.ts": {
+        "version": "734ddc145e147fbcd55f07d034f50ccff1086f5a880107665ec326fb368876f6",
+        "signature": "734ddc145e147fbcd55f07d034f50ccff1086f5a880107665ec326fb368876f6"
+      },
+      "../../node_modules/typescript/lib/lib.es2015.collection.d.ts": {
+        "version": "4a0862a21f4700de873db3b916f70e41570e2f558da77d2087c9490f5a0615d8",
+        "signature": "4a0862a21f4700de873db3b916f70e41570e2f558da77d2087c9490f5a0615d8"
+      },
+      "../../node_modules/typescript/lib/lib.es2015.generator.d.ts": {
+        "version": "765e0e9c9d74cf4d031ca8b0bdb269a853e7d81eda6354c8510218d03db12122",
+        "signature": "765e0e9c9d74cf4d031ca8b0bdb269a853e7d81eda6354c8510218d03db12122"
+      },
+      "../../node_modules/typescript/lib/lib.es2015.iterable.d.ts": {
+        "version": "285958e7699f1babd76d595830207f18d719662a0c30fac7baca7df7162a9210",
+        "signature": "285958e7699f1babd76d595830207f18d719662a0c30fac7baca7df7162a9210"
+      },
+      "../../node_modules/typescript/lib/lib.es2015.promise.d.ts": {
+        "version": "d4deaafbb18680e3143e8b471acd650ed6f72a408a33137f0a0dd104fbe7f8ca",
+        "signature": "d4deaafbb18680e3143e8b471acd650ed6f72a408a33137f0a0dd104fbe7f8ca"
+      },
+      "../../node_modules/typescript/lib/lib.es2015.proxy.d.ts": {
+        "version": "5e72f949a89717db444e3bd9433468890068bb21a5638d8ab15a1359e05e54fe",
+        "signature": "5e72f949a89717db444e3bd9433468890068bb21a5638d8ab15a1359e05e54fe"
+      },
+      "../../node_modules/typescript/lib/lib.es2015.reflect.d.ts": {
+        "version": "f5b242136ae9bfb1cc99a5971cccc44e99947ae6b5ef6fd8aa54b5ade553b976",
+        "signature": "f5b242136ae9bfb1cc99a5971cccc44e99947ae6b5ef6fd8aa54b5ade553b976"
+      },
+      "../../node_modules/typescript/lib/lib.es2015.symbol.d.ts": {
+        "version": "9ae2860252d6b5f16e2026d8a2c2069db7b2a3295e98b6031d01337b96437230",
+        "signature": "9ae2860252d6b5f16e2026d8a2c2069db7b2a3295e98b6031d01337b96437230"
+      },
+      "../../node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts": {
+        "version": "3e0a459888f32b42138d5a39f706ff2d55d500ab1031e0988b5568b0f67c2303",
+        "signature": "3e0a459888f32b42138d5a39f706ff2d55d500ab1031e0988b5568b0f67c2303"
+      },
+      "../../node_modules/typescript/lib/lib.es2016.array.include.d.ts": {
+        "version": "3f96f1e570aedbd97bf818c246727151e873125d0512e4ae904330286c721bc0",
+        "signature": "3f96f1e570aedbd97bf818c246727151e873125d0512e4ae904330286c721bc0"
+      },
+      "../../node_modules/typescript/lib/lib.es2017.object.d.ts": {
+        "version": "c2d60b2e558d44384e4704b00e6b3d154334721a911f094d3133c35f0917b408",
+        "signature": "c2d60b2e558d44384e4704b00e6b3d154334721a911f094d3133c35f0917b408"
+      },
+      "../../node_modules/typescript/lib/lib.es2017.sharedmemory.d.ts": {
+        "version": "b8667586a618c5cf64523d4e500ae39e781428abfb28f3de441fc66b56144b6f",
+        "signature": "b8667586a618c5cf64523d4e500ae39e781428abfb28f3de441fc66b56144b6f"
+      },
+      "../../node_modules/typescript/lib/lib.es2017.string.d.ts": {
+        "version": "21df2e0059f14dcb4c3a0e125859f6b6ff01332ee24b0065a741d121250bc71c",
+        "signature": "21df2e0059f14dcb4c3a0e125859f6b6ff01332ee24b0065a741d121250bc71c"
+      },
+      "../../node_modules/typescript/lib/lib.es2017.intl.d.ts": {
+        "version": "c1759cb171c7619af0d2234f2f8fb2a871ee88e956e2ed91bb61778e41f272c6",
+        "signature": "c1759cb171c7619af0d2234f2f8fb2a871ee88e956e2ed91bb61778e41f272c6"
+      },
+      "../../node_modules/typescript/lib/lib.es2017.typedarrays.d.ts": {
+        "version": "28569d59e07d4378cb3d54979c4c60f9f06305c9bb6999ffe6cab758957adc46",
+        "signature": "28569d59e07d4378cb3d54979c4c60f9f06305c9bb6999ffe6cab758957adc46"
+      },
+      "../../node_modules/@rooks/use-previous/lib/useprevious.d.ts": {
+        "version": "d08a8a55a738cf00a6748a1b1d73724b3baffc25099750c0f03666ca29c3051b",
+        "signature": "d08a8a55a738cf00a6748a1b1d73724b3baffc25099750c0f03666ca29c3051b"
+      },
+      "../../node_modules/@rooks/use-previous/lib/index.d.ts": {
+        "version": "0906598ba0a2b642776be03c71a1ea56b723cad423a2dd540349cb7e4d2c3f71",
+        "signature": "0906598ba0a2b642776be03c71a1ea56b723cad423a2dd540349cb7e4d2c3f71"
+      },
+      "../../node_modules/@reach/auto-id/dist/index.d.ts": {
+        "version": "11f88ee78cfca4a689fc511bb2a85a50e204608e114304a6a3465177764ba7da",
+        "signature": "11f88ee78cfca4a689fc511bb2a85a50e204608e114304a6a3465177764ba7da"
+      },
+      "../../node_modules/@types/react/global.d.ts": {
+        "version": "b4cd656db9b65fff477f65dbda00a5de4e2e765375316abd0c3ffd1282664ccc",
+        "signature": "b4cd656db9b65fff477f65dbda00a5de4e2e765375316abd0c3ffd1282664ccc"
+      },
+      "../../node_modules/csstype/index.d.ts": {
+        "version": "389ff64c4d75538171782c347554a2cb6328ffb2e838e9b012da3bda94e0767b",
+        "signature": "389ff64c4d75538171782c347554a2cb6328ffb2e838e9b012da3bda94e0767b"
+      },
+      "../../node_modules/@types/prop-types/index.d.ts": {
+        "version": "a7e32dcb90bf0c1b7a1e4ac89b0f7747cbcba25e7beddc1ebf17be1e161842ad",
+        "signature": "a7e32dcb90bf0c1b7a1e4ac89b0f7747cbcba25e7beddc1ebf17be1e161842ad"
+      },
+      "../../node_modules/@types/react/index.d.ts": {
+        "version": "bca898ed5e156c4e4a272e3f4f39a576fe78ffd474f23857b1146279949e1460",
+        "signature": "bca898ed5e156c4e4a272e3f4f39a576fe78ffd474f23857b1146279949e1460"
+      },
+      "../../node_modules/@reach/rect/dist/index.d.ts": {
+        "version": "8d0d998acf94519ad35a688a1b4a4c4a4257b805bec49eeae05ee7353203dfef",
+        "signature": "8d0d998acf94519ad35a688a1b4a4c4a4257b805bec49eeae05ee7353203dfef"
+      },
+      "../../node_modules/@rooks/use-window-size/lib/usewindowsize.d.ts": {
+        "version": "e58a7fd00abb390bc9e5778ce11f534ec48179e1bb14133e1a8502ccec2258de",
+        "signature": "e58a7fd00abb390bc9e5778ce11f534ec48179e1bb14133e1a8502ccec2258de"
+      },
+      "../../node_modules/@rooks/use-window-size/lib/index.d.ts": {
+        "version": "94e3fecca7aac8fd30bf7fad4ffebd85ba994881c72b570e8dcae352d7daa39f",
+        "signature": "94e3fecca7aac8fd30bf7fad4ffebd85ba994881c72b570e8dcae352d7daa39f"
+      },
+      "../../node_modules/react-multi-ref/index.d.ts": {
+        "version": "df59d8dda3b0bc7934daa8db0f10f06f7d61b5a509a5f69ae476f0620018b3fd",
+        "signature": "df59d8dda3b0bc7934daa8db0f10f06f7d61b5a509a5f69ae476f0620018b3fd"
+      },
+      "../../node_modules/react-swipeable/types/index.d.ts": {
+        "version": "50cfcdec9e20dac0b52465136a93fea5fdbf5360e15564a9f93dd350ea34af01",
+        "signature": "50cfcdec9e20dac0b52465136a93fea5fdbf5360e15564a9f93dd350ea34af01"
+      },
+      "../../node_modules/ssr-window/dist/types/document.d.ts": {
+        "version": "e861cd53f26e255f3614d579d4a11e8857296c47e8b199e919e61e5049ef638c",
+        "signature": "e861cd53f26e255f3614d579d4a11e8857296c47e8b199e919e61e5049ef638c"
+      },
+      "../../node_modules/ssr-window/dist/types/window.d.ts": {
+        "version": "437150a4a550d07f907f6e829caee6383a4385a997e291a3f45ec90eb9b59b01",
+        "signature": "437150a4a550d07f907f6e829caee6383a4385a997e291a3f45ec90eb9b59b01"
+      },
+      "../../node_modules/ssr-window/dist/types/extend.d.ts": {
+        "version": "a0766f3f058445aece8844c95fd6141b46aee3c69592fd86fc16f700100e762b",
+        "signature": "a0766f3f058445aece8844c95fd6141b46aee3c69592fd86fc16f700100e762b"
+      },
+      "../../node_modules/ssr-window/dist/types/ssr-window.d.ts": {
+        "version": "c10c87ebb0985d0dfd50314c9f5b8c94f52b70479a92e10b5dd04e49695f9372",
+        "signature": "c10c87ebb0985d0dfd50314c9f5b8c94f52b70479a92e10b5dd04e49695f9372"
+      },
+      "../../src/utils.ts": {
+        "version": "d27d2a349f703c54212f3918704337d626bb7970363a462913cd8bae889264fc",
+        "signature": "40ed7f0e57d5e82ef5f15e21db0d9f2e42bc3bf3d3ec8d56d1024f31840d4c78"
+      },
+      "../../node_modules/@react-hook/event/types/index.d.ts": {
+        "version": "d644709993d0d508b5bca1d27881b4bfbc95782e8997fd58daee96afdeea201a",
+        "signature": "d644709993d0d508b5bca1d27881b4bfbc95782e8997fd58daee96afdeea201a"
+      },
+      "../../node_modules/@rooks/use-interval/lib/index.d.ts": {
+        "version": "ab3d30556a85bf23091c96fe1059bcbd1914f9792b31f692085a193842279ab4",
+        "signature": "ab3d30556a85bf23091c96fe1059bcbd1914f9792b31f692085a193842279ab4"
+      },
+      "../../src/use-carousel.ts": {
+        "version": "8c00622ea0956eb995023bbff757e918baed232553c653995e45b5e82b02adac",
+        "signature": "6e011c1a985d6b6cf4e1310ce5f6d224901e02b5ff94f1bec4e752e966b1215d"
+      },
+      "../../src/index.tsx": {
+        "version": "7bb37b3be51caf149609f8588218c68fc54ff09826cdc284eb7be4a37d647c7d",
+        "signature": "7bb37b3be51caf149609f8588218c68fc54ff09826cdc284eb7be4a37d647c7d"
+      },
+      "../../node_modules/@types/react-dom/node_modules/@types/react/global.d.ts": {
+        "version": "ecf78e637f710f340ec08d5d92b3f31b134a46a4fcf2e758690d8c46ce62cba6",
+        "signature": "ecf78e637f710f340ec08d5d92b3f31b134a46a4fcf2e758690d8c46ce62cba6"
+      },
+      "../../node_modules/@types/react-dom/node_modules/csstype/index.d.ts": {
+        "version": "c89da57b29cf0a695fe46e6ab8cd7d64edb15a6708ae2352e30d79a3936ccc5c",
+        "signature": "c89da57b29cf0a695fe46e6ab8cd7d64edb15a6708ae2352e30d79a3936ccc5c"
+      },
+      "../../node_modules/@types/react-dom/node_modules/@types/react/index.d.ts": {
+        "version": "2b9f3e90d70810dab17d5eca94a736e2eed7d57d603b8879ea0a3c2829ddb26b",
+        "signature": "2b9f3e90d70810dab17d5eca94a736e2eed7d57d603b8879ea0a3c2829ddb26b"
+      },
+      "../../node_modules/@types/react-dom/index.d.ts": {
+        "version": "1923cbe22fe3f5005de4192f014b558a88e0fdec16726bb4f94ac76dd1a82c92",
+        "signature": "1923cbe22fe3f5005de4192f014b558a88e0fdec16726bb4f94ac76dd1a82c92"
+      },
+      "../../node_modules/@types/warning/index.d.ts": {
+        "version": "abd79d61be476addd783d0e0bace2e3c02bb3e38ec23bdfd236adc421b038939",
+        "signature": "abd79d61be476addd783d0e0bace2e3c02bb3e38ec23bdfd236adc421b038939"
+      }
+    },
+    "options": {
+      "target": 1,
+      "module": 1,
+      "lib": [
+        "lib.es2015.d.ts",
+        "lib.es2017.d.ts",
+        "lib.dom.d.ts"
+      ],
+      "strict": false,
+      "esModuleInterop": true,
+      "moduleResolution": 2,
+      "jsx": 2,
+      "outDir": "./",
+      "declaration": true,
+      "incremental": true,
+      "skipLibCheck": true,
+      "emitDeclarationOnly": true,
+      "declarationDir": "../types",
+      "configFilePath": "../../tsconfig.json"
+    },
+    "referencedMap": {
+      "../../node_modules/@rooks/use-previous/lib/index.d.ts": [
+        "../../node_modules/@rooks/use-previous/lib/useprevious.d.ts"
+      ],
+      "../../node_modules/@types/react/index.d.ts": [
+        "../../node_modules/csstype/index.d.ts",
+        "../../node_modules/@types/prop-types/index.d.ts",
+        "../../node_modules/@types/react/global.d.ts"
+      ],
+      "../../node_modules/@reach/rect/dist/index.d.ts": [
+        "../../node_modules/@types/react/index.d.ts"
+      ],
+      "../../node_modules/@rooks/use-window-size/lib/index.d.ts": [
+        "../../node_modules/@rooks/use-window-size/lib/usewindowsize.d.ts"
+      ],
+      "../../node_modules/react-swipeable/types/index.d.ts": [
+        "../../node_modules/@types/react/index.d.ts"
+      ],
+      "../../node_modules/ssr-window/dist/types/ssr-window.d.ts": [
+        "../../node_modules/ssr-window/dist/types/document.d.ts",
+        "../../node_modules/ssr-window/dist/types/window.d.ts",
+        "../../node_modules/ssr-window/dist/types/extend.d.ts"
+      ],
+      "../../src/utils.ts": [
+        "../../node_modules/@types/react/index.d.ts"
+      ],
+      "../../node_modules/@react-hook/event/types/index.d.ts": [
+        "../../node_modules/@types/react/index.d.ts"
+      ],
+      "../../src/use-carousel.ts": [
+        "../../node_modules/@rooks/use-previous/lib/index.d.ts",
+        "../../node_modules/@reach/auto-id/dist/index.d.ts",
+        "../../node_modules/@reach/rect/dist/index.d.ts",
+        "../../node_modules/@rooks/use-window-size/lib/index.d.ts",
+        "../../node_modules/@types/react/index.d.ts",
+        "../../node_modules/react-multi-ref/index.d.ts",
+        "../../node_modules/react-swipeable/types/index.d.ts",
+        "../../node_modules/ssr-window/dist/types/ssr-window.d.ts",
+        "../../src/utils.ts",
+        "../../node_modules/@react-hook/event/types/index.d.ts",
+        "../../node_modules/@rooks/use-interval/lib/index.d.ts"
+      ],
+      "../../src/index.tsx": [
+        "../../src/use-carousel.ts"
+      ],
+      "../../node_modules/@types/react-dom/node_modules/@types/react/index.d.ts": [
+        "../../node_modules/@types/react-dom/node_modules/csstype/index.d.ts",
+        "../../node_modules/@types/prop-types/index.d.ts",
+        "../../node_modules/@types/react-dom/node_modules/@types/react/global.d.ts"
+      ],
+      "../../node_modules/@types/react-dom/index.d.ts": [
+        "../../node_modules/@types/react-dom/node_modules/@types/react/index.d.ts"
+      ]
+    },
+    "exportedModulesMap": {
+      "../../node_modules/@rooks/use-previous/lib/index.d.ts": [
+        "../../node_modules/@rooks/use-previous/lib/useprevious.d.ts"
+      ],
+      "../../node_modules/@types/react/index.d.ts": [
+        "../../node_modules/csstype/index.d.ts",
+        "../../node_modules/@types/prop-types/index.d.ts",
+        "../../node_modules/@types/react/global.d.ts"
+      ],
+      "../../node_modules/@reach/rect/dist/index.d.ts": [
+        "../../node_modules/@types/react/index.d.ts"
+      ],
+      "../../node_modules/@rooks/use-window-size/lib/index.d.ts": [
+        "../../node_modules/@rooks/use-window-size/lib/usewindowsize.d.ts"
+      ],
+      "../../node_modules/react-swipeable/types/index.d.ts": [
+        "../../node_modules/@types/react/index.d.ts"
+      ],
+      "../../node_modules/ssr-window/dist/types/ssr-window.d.ts": [
+        "../../node_modules/ssr-window/dist/types/document.d.ts",
+        "../../node_modules/ssr-window/dist/types/window.d.ts",
+        "../../node_modules/ssr-window/dist/types/extend.d.ts"
+      ],
+      "../../src/utils.ts": [
+        "../../node_modules/@types/react/index.d.ts"
+      ],
+      "../../node_modules/@react-hook/event/types/index.d.ts": [
+        "../../node_modules/@types/react/index.d.ts"
+      ],
+      "../../src/use-carousel.ts": [
+        "../../node_modules/@types/react/index.d.ts"
+      ],
+      "../../src/index.tsx": [
+        "../../src/use-carousel.ts"
+      ],
+      "../../node_modules/@types/react-dom/node_modules/@types/react/index.d.ts": [
+        "../../node_modules/@types/react-dom/node_modules/csstype/index.d.ts",
+        "../../node_modules/@types/prop-types/index.d.ts",
+        "../../node_modules/@types/react-dom/node_modules/@types/react/global.d.ts"
+      ],
+      "../../node_modules/@types/react-dom/index.d.ts": [
+        "../../node_modules/@types/react-dom/node_modules/@types/react/index.d.ts"
+      ]
+    },
+    "semanticDiagnosticsPerFile": [
+      "../../src/utils.ts",
+      "../../src/use-carousel.ts",
+      "../../src/index.tsx",
+      "../../node_modules/typescript/lib/lib.es5.d.ts",
+      "../../node_modules/typescript/lib/lib.es2015.d.ts",
+      "../../node_modules/typescript/lib/lib.es2016.d.ts",
+      "../../node_modules/typescript/lib/lib.es2017.d.ts",
+      "../../node_modules/typescript/lib/lib.dom.d.ts",
+      "../../node_modules/typescript/lib/lib.es2015.core.d.ts",
+      "../../node_modules/typescript/lib/lib.es2015.collection.d.ts",
+      "../../node_modules/typescript/lib/lib.es2015.generator.d.ts",
+      "../../node_modules/typescript/lib/lib.es2015.iterable.d.ts",
+      "../../node_modules/typescript/lib/lib.es2015.promise.d.ts",
+      "../../node_modules/typescript/lib/lib.es2015.proxy.d.ts",
+      "../../node_modules/typescript/lib/lib.es2015.reflect.d.ts",
+      "../../node_modules/typescript/lib/lib.es2015.symbol.d.ts",
+      "../../node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts",
+      "../../node_modules/typescript/lib/lib.es2016.array.include.d.ts",
+      "../../node_modules/typescript/lib/lib.es2017.object.d.ts",
+      "../../node_modules/typescript/lib/lib.es2017.sharedmemory.d.ts",
+      "../../node_modules/typescript/lib/lib.es2017.string.d.ts",
+      "../../node_modules/typescript/lib/lib.es2017.intl.d.ts",
+      "../../node_modules/typescript/lib/lib.es2017.typedarrays.d.ts",
+      "../../node_modules/@rooks/use-previous/lib/useprevious.d.ts",
+      "../../node_modules/@rooks/use-previous/lib/index.d.ts",
+      "../../node_modules/@reach/auto-id/dist/index.d.ts",
+      "../../node_modules/@types/react/global.d.ts",
+      "../../node_modules/csstype/index.d.ts",
+      "../../node_modules/@types/prop-types/index.d.ts",
+      "../../node_modules/@types/react/index.d.ts",
+      "../../node_modules/@reach/rect/dist/index.d.ts",
+      "../../node_modules/@rooks/use-window-size/lib/usewindowsize.d.ts",
+      "../../node_modules/@rooks/use-window-size/lib/index.d.ts",
+      "../../node_modules/react-multi-ref/index.d.ts",
+      "../../node_modules/react-swipeable/types/index.d.ts",
+      "../../node_modules/ssr-window/dist/types/document.d.ts",
+      "../../node_modules/ssr-window/dist/types/window.d.ts",
+      "../../node_modules/ssr-window/dist/types/extend.d.ts",
+      "../../node_modules/ssr-window/dist/types/ssr-window.d.ts",
+      "../../node_modules/@react-hook/event/types/index.d.ts",
+      "../../node_modules/@rooks/use-interval/lib/index.d.ts",
+      "../../node_modules/@types/react-dom/node_modules/@types/react/global.d.ts",
+      "../../node_modules/@types/react-dom/node_modules/csstype/index.d.ts",
+      "../../node_modules/@types/react-dom/node_modules/@types/react/index.d.ts",
+      "../../node_modules/@types/react-dom/index.d.ts",
+      "../../node_modules/@types/warning/index.d.ts"
+    ]
+  },
+  "version": "3.7.5"
+}
