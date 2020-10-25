@@ -88,7 +88,7 @@ export function useControllable<T>(props: UseControllableProps<T>) {
   return [finalValue, update] as [T, (next: T) => void];
 }
 
-export function useLatest<T>(val: T) {
+function useLatest<T>(val: T) {
   const saved = React.useRef<T>();
 
   React.useEffect(() => {
@@ -96,4 +96,33 @@ export function useLatest<T>(val: T) {
   }, [val]);
 
   return saved;
+}
+
+function useEventListener<K extends keyof DocumentEventMap>(
+  type: K,
+  handler: (event: DocumentEventMap[K]) => void,
+  element = global,
+  options: AddEventListenerOptions = {}
+) {
+  const { capture, passive, once } = options;
+
+  if (handler == null) {
+    throw new Error("useEventListener: You forgot to pass `handler`");
+  }
+
+  const savedHandler = useLatest(handler);
+
+  React.useEffect(() => {
+    const isSupported = !!element?.addEventListener;
+    if (!isSupported) return;
+
+    const eventListener = (event: DocumentEventMap[K]) =>
+      savedHandler.current?.(event);
+
+    const opts = { capture, passive, once };
+    element.addEventListener<any>(type, eventListener, opts);
+    return () => {
+      element.removeEventListener<any>(type, eventListener, opts);
+    };
+  }, [savedHandler, type, element, capture, passive, once]);
 }
