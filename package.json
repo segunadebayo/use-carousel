@@ -31,7 +31,8 @@
     "build:module": "tsc --module es2015 --outDir lib/module --declaration false",
     "build:commonjs": "tsc --module commonjs --outDir lib/commonjs --declaration false",
     "build:types": "tsc --emitDeclarationOnly --declaration true --declarationDir lib/types",
-    "build": "yarn build:module && yarn build:commonjs && yarn build:types"
+    "build": "yarn build:module && yarn build:commonjs && yarn build:types",
+    "release": "rm -rf lib && yarn build && npm publish"
   },
   "browserslist": [
     ">0.2%",

@@ -20,4 +20,5 @@ export interface UseControllableProps<T> {
 }
 export declare function useControllable<T>(props: UseControllableProps<T>): [T, (next: T) => void];
 export declare function useLatest<T>(val: T): React.MutableRefObject<T>;
+export declare function useEventListener<K extends keyof DocumentEventMap>(type: K, handler: (event: DocumentEventMap[K]) => void, element?: Partial<Window>, options?: AddEventListenerOptions): void;
 export {};

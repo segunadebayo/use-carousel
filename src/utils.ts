@@ -1,4 +1,5 @@
 import * as React from "react";
+import { window } from "ssr-window";
 
 type Args<T extends Function> = T extends (...args: infer R) => any ? R : never;
 
@@ -98,10 +99,10 @@ export function useLatest<T>(val: T) {
   return saved;
 }
 
-function useEventListener<K extends keyof DocumentEventMap>(
+export function useEventListener<K extends keyof DocumentEventMap>(
   type: K,
   handler: (event: DocumentEventMap[K]) => void,
-  element = global,
+  element = window,
   options: AddEventListenerOptions = {}
 ) {
   const { capture, passive, once } = options;

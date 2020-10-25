@@ -146,19 +146,15 @@
         "signature": "c10c87ebb0985d0dfd50314c9f5b8c94f52b70479a92e10b5dd04e49695f9372"
       },
       "../../src/utils.ts": {
-        "version": "d27d2a349f703c54212f3918704337d626bb7970363a462913cd8bae889264fc",
-        "signature": "825328ab0407fae610ef30c35e71c1af3511416c58d8ccfaeb1c5668963212c8"
-      },
-      "../../node_modules/@react-hook/event/types/index.d.ts": {
-        "version": "d644709993d0d508b5bca1d27881b4bfbc95782e8997fd58daee96afdeea201a",
-        "signature": "d644709993d0d508b5bca1d27881b4bfbc95782e8997fd58daee96afdeea201a"
+        "version": "0025581658002f3272c57a6ef325f1d96d529603486905cd6ec3368657309cd3",
+        "signature": "87d22871d5f511d08029ec23513ea721fe1af8e488c33c63649bcf96c6cd4e16"
       },
       "../../node_modules/@rooks/use-interval/lib/index.d.ts": {
         "version": "ab3d30556a85bf23091c96fe1059bcbd1914f9792b31f692085a193842279ab4",
         "signature": "ab3d30556a85bf23091c96fe1059bcbd1914f9792b31f692085a193842279ab4"
       },
       "../../src/use-carousel.ts": {
-        "version": "8c00622ea0956eb995023bbff757e918baed232553c653995e45b5e82b02adac",
+        "version": "0235e9eeffd2c20f421e891770498ea538ea2fa36ca5a966fa855ffcbc7611d1",
         "signature": "bf5065cb7c379c0628767ec4cc26bd9d8cdcaace463c30c35b9dbfc906a25259"
       },
       "../../src/index.tsx": {
@@ -228,10 +224,8 @@
         "../../node_modules/ssr-window/dist/types/extend.d.ts"
       ],
       "../../src/utils.ts": [
-        "../../node_modules/@types/react/index.d.ts"
-      ],
-      "../../node_modules/@react-hook/event/types/index.d.ts": [
-        "../../node_modules/@types/react/index.d.ts"
+        "../../node_modules/@types/react/index.d.ts",
+        "../../node_modules/ssr-window/dist/types/ssr-window.d.ts"
       ],
       "../../src/use-carousel.ts": [
         "../../node_modules/@rooks/use-previous/lib/index.d.ts",
@@ -243,7 +237,6 @@
         "../../node_modules/react-swipeable/types/index.d.ts",
         "../../node_modules/ssr-window/dist/types/ssr-window.d.ts",
         "../../src/utils.ts",
-        "../../node_modules/@react-hook/event/types/index.d.ts",
         "../../node_modules/@rooks/use-interval/lib/index.d.ts"
       ],
       "../../src/index.tsx": [
@@ -272,9 +265,6 @@
         "../../node_modules/csstype/index.d.ts",
         "../../node_modules/@types/prop-types/index.d.ts",
         "../../node_modules/@types/react/global.d.ts"
-      ],
-      "../../node_modules/@react-hook/event/types/index.d.ts": [
-        "../../node_modules/@types/react/index.d.ts"
       ],
       "../../src/utils.ts": [
         "../../node_modules/@types/react/index.d.ts"
@@ -320,7 +310,6 @@
       "../../node_modules/ssr-window/dist/types/extend.d.ts",
       "../../node_modules/ssr-window/dist/types/ssr-window.d.ts",
       "../../src/utils.ts",
-      "../../node_modules/@react-hook/event/types/index.d.ts",
       "../../node_modules/@rooks/use-interval/lib/index.d.ts",
       "../../src/use-carousel.ts",
       "../../src/index.tsx",
