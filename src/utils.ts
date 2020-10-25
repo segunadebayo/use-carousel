@@ -88,7 +88,7 @@ export function useControllable<T>(props: UseControllableProps<T>) {
   return [finalValue, update] as [T, (next: T) => void];
 }
 
-function useLatest<T>(val: T) {
+export function useLatest<T>(val: T) {
   const saved = React.useRef<T>();
 
   React.useEffect(() => {

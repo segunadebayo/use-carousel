@@ -21,9 +21,9 @@ import {
   callAllHandlers,
   mergeRefs,
   useLatest,
+  useEventListener,
   useControllable,
 } from "./utils";
-import useEventListener from "@react-hook/event";
 import useInterval from "@rooks/use-interval";
 
 type Dict = Record<string, any>;
@@ -617,7 +617,7 @@ export function useCarousel(props: UseCarouselProps = {}) {
     }
   }, [index, isFakeSlide]);
 
-  useEventListener(window.document, "visibilitychange", onVisibilityChange);
+  useEventListener("visibilitychange", onVisibilityChange);
 
   const onFakeSlideTransitionEnd = () => {
     if (!hasFakeSlides) return;
